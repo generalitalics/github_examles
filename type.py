@@ -12,6 +12,7 @@ Crated:  08.06.2016
 print(type(1))      # <class 'int'>
 print(type(1.0))    # <class 'float'>
 print(5/2)          # 2.5
-print(5//2)        # 2
-print()
-
+print(5//2)         # 2
+print(5**2)         # 25
+print(5 % 2)        # 1
+# =====================================
