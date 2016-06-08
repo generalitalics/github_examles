@@ -34,3 +34,6 @@ lst.remove(1)                                   # delete first num
 print(lst)                                      # [-1, 1, 5, 7, 2, 11]
 lst.sort()                                      # sort method
 print(lst)                                      # [-1, 1, 2, 5, 7, 11]
+lst.pop(2)                                      # pop method. last num
+print(lst)                                      # [-1, 1, 5, 7, 11]
+print([1, 2, 3] + [4, 5, 6])                    # [1, 2, 3, 4, 5, 6]
