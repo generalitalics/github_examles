@@ -22,7 +22,15 @@ print()
 # ==================================================================
 print(type([1, 2, 3, 'abc', [1, 2, 3], 4]))     # <class 'list'>
 print([c * 3 for c in 'list'])                  # list comprehension
-lst = [1, 3, 5]                                 #
-lst.append(7)                                   # append method
-print(lst)                                      # add element
-
+lst = [1, 1, 5]                                 # append method
+lst.append(7)                                   # add num
+print(lst)                                      # [1, 1, 5, 7]
+lst.extend([2, 11])                             # add list
+print(lst)                                      # [1, 1, 5, 7, 2, 11]
+lst.insert(0,-1)                                # add num in..
+print(lst)                                      # [-1, 1, 1, 5, 7, 2, 11]
+print(lst.count(1))                             # 2
+lst.remove(1)                                   # delete first num
+print(lst)                                      # [-1, 1, 5, 7, 2, 11]
+lst.sort()                                      # sort method
+print(lst)                                      # [-1, 1, 2, 5, 7, 11]
