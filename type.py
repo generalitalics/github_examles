@@ -9,6 +9,7 @@ Crated:  08.06.2016
 
 # Числа
 # ==================================================================
+print('Numeric')
 print(type(1))                                  # <class 'int'>
 print(type(1.0))                                # <class 'float'>
 print(5/2)                                      # 2.5
@@ -20,6 +21,7 @@ print()
 
 # Списки
 # ==================================================================
+print('List')
 print(type([1, 2, 3, 'abc', [1, 2, 3], 4]))     # <class 'list'>
 print([c * 3 for c in 'list'])                  # list comprehension
                                                 # ['lll', 'iii', 'sss', 'ttt']
@@ -44,6 +46,7 @@ print()
 
 # Словари
 # ==================================================================
+print('Dict')
 print(type({1: 'abc', 4: 'dsr'}))               # <class 'dict'>
 print({i: i ** 2 for i in range(4)})            # dict^^ comprehension
                                                 # {0: 0, 1: 1, 2: 4, 3: 9}
@@ -60,6 +63,7 @@ print()
 
 # Кортежи (tuple)
 # ==================================================================
+print('Tuple')
 print(type((2, 2.05, "Hello")))                 # <class 'tuple'>
 tp = (2, 2, 'ggg', [1, 2, 3])                   # tuple
 tp2 = (4, 'hdd')                                # tuple2
@@ -67,9 +71,22 @@ print(tp+tp2)                                   # (2, 2, 'ggg', [1, 2, 3], 4, 'h
 print(tp[3])                                    # [1, 2, 3]
 print(tp.index('ggg'))                          # 2
 print(tp.count(2))                              # 2
+print()
 # ==================================================================
 
-# Множества
+# Множества (set & frozenset)
 # ==================================================================
-
+print('Set')
+print(type({1, 2, 3, 'e'}))                     # <class 'set'>
+st = {1, 5, 'rrrt', 4}                          # set
+st2 = {5, 'rrrt', 1, 4}                         # set
+print(st == st2)                                # True
+print(4 in st)                                  # True
+st.add('ff')                                    # add new elem
+print(st)                                       # {1, 'ff', 4, 5, 'rrrt'}
+print(len(st))                                  # 5
+print(st.difference(st2))                       # {'ff'}
+fst = frozenset('12345')                        # frozenset - unchanged set
+print(fst)                                      # frozenset({'4', '1', '5', '3', '2'})
+print()
 # ==================================================================
