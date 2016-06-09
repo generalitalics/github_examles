@@ -50,6 +50,6 @@ dct = {1: 'HH', 2: 'RR'}                        # dictionary
 print(dct[1])                                   # HH
 dct[3] = 'JJ'                                   # add new key: value
 print(dct)                                      # {1: 'HH', 2: 'RR', 3: 'JJ'}
-print(dct.get(8, 'Not key!'))                   # Not key '8': Not key!
+print(dct.get(8, 'Not key!'))                   # Not key '8': 'Not key!'
 
 # ==================================================================
